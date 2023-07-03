@@ -1,4 +1,6 @@
+#include<string>
 #include "../headers/node.h"
+
 std::string node::gen_uid(const int& length, const int& min, const int& max) const {
    std::string id = "";
    for (int i = 0; i < length; ++i) {
