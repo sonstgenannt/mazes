@@ -1,8 +1,10 @@
 #include<vector>
+#include <map>
 
 class graph {
    private:
-      std::vector<node> nodes;
+      //std::vector<node> nodes;
+      std::map<std::string, node> nodes;
 
    public:
       graph(); // constructor
@@ -13,5 +15,6 @@ class graph {
        */
       bool add_node(const node& n); 
 
-      std::vector<node> get_nodes(); // getter for nodes vector
+      //std::vector<node> get_nodes(); // getter for nodes vector
+      std::map<std::string, node> get_nodes();
 };
