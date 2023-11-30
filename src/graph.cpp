@@ -16,6 +16,15 @@ bool graph::add_node(const node& n) {
    return true;
 }
 
+bool graph::add_edge(const node& n1, const node& n2) {
+   this->edges.push_back(std::vector<node>{n1, n2});
+   return true;
+}
+
 std::map<std::string, node> graph::get_nodes() {
    return this->nodes;
+}
+
+std::vector<std::vector<node>> graph::get_edges() {
+   return this->edges;
 }
